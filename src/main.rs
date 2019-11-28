@@ -17,7 +17,7 @@ fn base64decode(input: String) -> String {
                 '/' => 63,
                 _ => panic!("Input is not a base64 code")
             };
-            format!("{:#08b}", convert)[2..].to_string()        //convert indices to binary format and remove the two first digits
+            format!("{:06b}", convert)        //convert indices to binary format and remove the two first digits
         })
         .collect::<String>()                                    //concatenate the resulting binary values
         .chars()
