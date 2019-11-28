@@ -1,8 +1,8 @@
 use std::str;
  
 const UPPERCASE_OFFSET: i8 = -65;
-const LOWERCASE_OFFSET: i8 = 26 - 97;
-const NUM_OFFSET: i8 = 52 - 48;
+const LOWERCASE_OFFSET: i8 = -71;
+const NUM_OFFSET: i8 = 4;
 
 fn base64decode(input: String) -> String {
     let result = input.trim().chars()
